@@ -1,0 +1,8 @@
+name = "vietqr-svg2png"
+main = "src/index.ts"
+compatibility_date = "2026-10-19"
+
+rules = [
+  { type = "CompiledWasm", globs = ["**/*.wasm"], fallthrough = true },
+  { type = "Data", globs = ["**/*.ttf"], fallthrough = true },
+]

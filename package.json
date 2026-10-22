@@ -1,0 +1,20 @@
+{
+  "name": "vietqr-svg2png",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker that proxies img.vietqr.io SVG QR codes and renders them as PNG",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@resvg/resvg-wasm": "^2.6.2"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261022.1",
+    "typescript": "^7.0.2",
+    "wrangler": "^4.152.0"
+  }
+}
