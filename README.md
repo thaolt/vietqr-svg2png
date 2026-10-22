@@ -11,8 +11,8 @@ returned as PNG.
 
 ```
 GET /image/HDBank-135704070047035-compact2.png?addInfo=...&amount=150000&accountName=...
-   -> fetch  https://img.vietqr.io/image/HDBank-135704070047035-compact2.svg?addInfo=...&amount=150000&accountName=...
-   -> render -> 200 image/png
+    -> fetch  https://img.vietqr.io/image/HDBank-135704070047035-compact2.svg?addInfo=...&amount=150000&accountName=...
+    -> render -> 200 image/png
 ```
 
 Responses are cached at the edge (Cache API, 24h). Non-`.png` paths return
@@ -23,6 +23,18 @@ Responses are cached at the edge (Cache API, 24h). Non-`.png` paths return
 `fonts/` contains Liberation Sans Regular/Bold subsetted to Latin + Vietnamese
 glyphs, used to render the account name/amount text the SVG contains
 (`font-family="Arial"` falls back to these).
+
+The Liberation Sans files in this repository are licensed under the SIL Open
+Font License, Version 1.1. See `fonts/OFL.txt` for the full license text and
+copyright details.
+
+## License
+
+This project code is licensed under the MIT License. See `LICENSE` for the
+full text.
+
+The bundled font files remain under their original font license:
+- Liberation Sans — SIL Open Font License 1.1 (`fonts/OFL.txt`)
 
 ## Commands
 
